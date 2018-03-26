@@ -5,7 +5,7 @@
 class EmailParser
 
 def initialize(input)
-  @emails = input.sub(/,/,'').split(' ')
+  @emails = input.gsub(/,/,'').split(' ')
 end
 
 def parse
