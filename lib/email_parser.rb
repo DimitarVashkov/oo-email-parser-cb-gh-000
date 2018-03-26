@@ -8,5 +8,9 @@ def initialize(input)
   @emails = input.sub(/,/,'').split('')
 end
 
+def parse
+  @emails.uniq
+end
+
 
 end
